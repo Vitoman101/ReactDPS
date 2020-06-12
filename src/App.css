@@ -31,3 +31,36 @@ button.mbtn {
   cursor:pointer;
   margin:1em;
 }
+
+button.darkbtn {
+  padding:0.6em 2em;
+  border-radius: 8px;
+  color:#fff;
+  background-color:gray;
+  font-size:1.1em;
+  border:0;
+  cursor:pointer;
+  margin:1em;
+}
+
+.darkTxt {
+  color: black;
+}
+
+.darkerDiv {
+  background-color: darkgray;
+  text-align: center;
+  color: white;
+  padding: 2em;
+  margin: 1em;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  display: inline-block;
+  padding: 1vh;
+}
+
