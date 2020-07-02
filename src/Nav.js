@@ -17,7 +17,7 @@ const pStyle = {
 
 function Nav() {
   return (
-    <nav>
+    <nav className="navbar fixed-bottom navbar-expand-lg navbar-dark default-color">
         <div className='nav-links'>
             <Link style={navStyle} to='/'>
                 <FaHome /> <p style={pStyle}>Home</p>
@@ -25,11 +25,11 @@ function Nav() {
             <Link style={navStyle} to='/example'>
                 <FaGraduationCap /> <p style={pStyle}>Experience</p>
             </Link>
-            <Link style={navStyle} to='/'>
+            <Link style={navStyle} to='/activities'>
                 <FaCalendar /> <p style={pStyle}>Activities</p>
             </Link>
             <Link style={navStyle} to='/about'>
-                <FaUser /> <p style={pStyle}>Profile</p>
+                <FaUser /> <p style={pStyle}>About us</p>
             </Link>
             
             

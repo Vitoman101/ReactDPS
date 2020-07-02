@@ -1,0 +1,8 @@
+.parent {
+    overflow: hidden;
+}
+
+.sliderImg {
+    height: 100px;
+    width: 95%;
+}
