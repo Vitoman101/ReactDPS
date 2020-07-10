@@ -29,7 +29,7 @@ function Nav() {
                 <FaCalendar /> <p style={pStyle}>Activities</p>
             </Link>
             <Link style={navStyle} to='/about'>
-                <FaUser /> <p style={pStyle}>About us</p>
+                <FaUser /> <p style={pStyle}>Consultations</p>
             </Link>
             
             

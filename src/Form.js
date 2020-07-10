@@ -10,7 +10,7 @@ function Example() {
 
     <p class="h4 mb-4">Sign up</p>
 
-    <div class="form-row mb-4">
+    <div className="form-row mb-4">
         <div class="col">
             <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" />
         </div>

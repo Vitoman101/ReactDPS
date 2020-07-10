@@ -8,31 +8,23 @@ import Danish from './assets/Danish.png';
 
 function About() {
   return (
-    <div>
-      <h1>
-          ABOUT US
-      </h1>
-      <div>
-      <img className='teamImgs' src={AndreaVlad} alt="Andrea Vlad" />
-      <p>Andrea Vlad - Lead software designer</p>
+<div className="container welcome">
+  <div className="row justify-content-center align-items-center">
+  What kind of consulatation would you like to have?
+    <div className="col-5 m-2 darkerDiv">
+        Option 1
+      </div>  
+      <div className="col-5 m-2 darkerDiv">
+        Option 2
       </div>
-      <div>
-      <img className='teamImgs' src={Janet} alt="Janet Yeh" />
-      <p>Janet Yeh - Best desginer in team</p>
-      </div>
-      <div>
-      <img className='teamImgs' src={Nihad} alt="Nihad" />
-      <p>Nihad - CEO</p>
-      </div>
-      <div>
-      <img className='teamImgs' src={Viktor} alt="Andrea Vlad" />
-      <p>Viktor - a guy that makes website</p>
-      </div>
-      <div>
-      <img className='teamImgs' src={Danish} alt="Danish" />
-      <p style={{paddingBottom: 50}}>Danish - Lead AI engineer</p>
+      <div className="col-5 m-2 darkerDiv">
+        Option 3
+      </div> 
+      <div className="col-5 m-2 darkerDiv">
+       Option 4
       </div>
     </div>
+  </div>
   );
 }
 

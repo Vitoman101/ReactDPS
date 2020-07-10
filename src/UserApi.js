@@ -9,11 +9,12 @@ export default class UserApi extends React.Component {
     }
 
     async componentDidMount() {
-        const url = "https://api.randomuser.me/";
+        var test = Math.floor(Math.random() *4);
+        const url = "http://localhost:5000/getuser";
         const response = await fetch(url);
         const data = await response.json();
-        this.setState({person: data.results[0], loading: false});
-        console.log(data.results[0]);
+        this.setState({person: data.persons[test], loading: false});
+        console.log(data.persons[test]);
     }
 
     render() {
@@ -27,20 +28,8 @@ export default class UserApi extends React.Component {
             (
             <div className='parent'> 
             <h2>YOU MACHED:</h2>
-                <div>
-                <img alt='' src={this.state.person.picture.large}/>
-                    <div>
-                        <h2>{this.state.person.name.title}. {this.state.person.name.first} {this.state.person.name.last}</h2>
-                    </div>
-                </div>
-                
-                <div className='description'> 
-                    <p>City: {this.state.person.location.city}</p>
-                    <p>Country: {this.state.person.location.country}</p>
-                    <p>Email: {this.state.person.email}</p>
-                    <hr />
-                </div>
-                <button className="mbtn">Call now!</button>
+            <img alt='' src={this.state.person.photo} />
+            <p>{this.state.person.first}</p>
             </div>)}
 
 

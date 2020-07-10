@@ -17,14 +17,6 @@ import 'mdbreact/dist/css/mdb.css';
 
 import { FaGraduationCap } from "react-icons/fa";
 
-var settings = {
-  dots: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-};
-
 function App() {
   return (
     <Router>
@@ -46,39 +38,16 @@ function App() {
 
 const Home = () => (
   <div>
-    <h3>Welcome to your exploration</h3>
     <div className="darkerDiv">
       <h3 className="darkTxt">Expenice the daily life of what you interest</h3>
       <FaGraduationCap size={90}></FaGraduationCap>
-      <button className="darkbtn">LET'S GET STARTED</button>
+      <button className="darkbtn">Book a consulatation</button>
     </div>
 
-    <h2>Activites for your expenice</h2>
-    <Slider {...settings} className='slajder'>
-      <div className="container">
-        <div className="item">
-          <FaGraduationCap />
-        </div>
-        <div className="item">
-          <p>Some dummy text</p>
-        </div>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
+    <div className="lightDiv">
+      <h3 className="darkTxt">Expenice the daily life of your future self</h3>
+      <button className="darkbtn">Experience now</button>
+    </div>
   </div>
 
   
